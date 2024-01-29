@@ -1,14 +1,39 @@
-import { useState } from "react";
+// import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import Button from "./Button";
 import "./App.css";
+import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const handleClick = () => {
+    alert("hi");
+  };
   return (
     <>
-      <div className="App">App</div>
+      <div>
+        <Button primary outline rounded className="mb-5" onClick={handleClick}>
+          <GoBell />
+          click-me
+        </Button>
+      </div>
+      <div>
+        <Button secondary>
+          <GoCloudDownload /> download
+        </Button>
+      </div>
+      <div>
+        <Button danger rounded>
+          <GoDatabase />
+          storage
+        </Button>
+      </div>
+      <div>
+        <Button warning>Hi-there</Button>
+      </div>
+      <div>
+        <Button success>Hi-there</Button>
+      </div>
     </>
   );
 }
