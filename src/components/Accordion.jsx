@@ -13,7 +13,7 @@ const Accordion = ({ items }) => {
       } else return nextIndex;
     });
   };
-  //rendering
+  //rendering the items
   const renderedItems = items.map((i, index) => {
     const isExpanded = index === expandedIndex;
     const icon = (
@@ -22,7 +22,7 @@ const Accordion = ({ items }) => {
       </span>
     );
 
-    //render the items
+    //main render
     return (
       <div key={i.id}>
         <div
