@@ -1,41 +1,24 @@
-// import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import Button from "./Button";
-import "./App.css";
-import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
+import Accordion from "./components/Accordion";
 
 function App() {
-  const handleClick = () => {
-    alert("hi");
-  };
-  return (
-    <>
-      <div>
-        <Button primary outline rounded className="mb-5" onClick={handleClick}>
-          <GoBell />
-          click-me
-        </Button>
-      </div>
-      <div>
-        <Button secondary>
-          <GoCloudDownload /> download
-        </Button>
-      </div>
-      <div>
-        <Button danger rounded>
-          <GoDatabase />
-          storage
-        </Button>
-      </div>
-      <div>
-        <Button warning>Hi-there</Button>
-      </div>
-      <div>
-        <Button success>Hi-there</Button>
-      </div>
-    </>
-  );
+  const items = [
+    {
+      id: 1,
+      label: "Can i use react on a project?",
+      content: "ye lorem ipsum dolor sit amet",
+    },
+    {
+      id: 2,
+      label: "can i use css?",
+      content: "lorem ipsum dolor sit amet nope",
+    },
+    {
+      id: 3,
+      label: "should i use JS?",
+      content: "lorem ipsum dolor sit amet use TS",
+    },
+  ];
+  return <Accordion items={items} />;
 }
 
 export default App;
