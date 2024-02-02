@@ -17,4 +17,6 @@ To install the React UI library, you can use npm or yarn:
 
 ```bash
 
+yarn install
+
 ```
