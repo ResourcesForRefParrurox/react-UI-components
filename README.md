@@ -1,8 +1,20 @@
-# React + Vite
+# React UI Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a UI library made purely from scratch using React, reducers, immer, custom hooks, and raw coding. It provides a set of reusable UI components that can be easily integrated into your React projects.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Accordion component: A collapsible content container that allows users to toggle the visibility of its content.
+- Buttons: A collection of customizable buttons with different styles and sizes.
+- Counter page: A page that displays a counter and allows users to increment or decrement its value.
+- Dropdown component: A customizable dropdown menu that allows users to select an option from a list.
+- Modal: A modal dialog box that can be used to display additional information or prompt user actions.
+- Table with sorting functions: A table component that supports sorting functionality for its columns.
+
+## Installation
+
+To install the React UI library, you can use npm or yarn:
+
+```bash
+
+```
